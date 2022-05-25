@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:task_manager/colors/app_colors.dart';
 import 'package:task_manager/widgets/ButtonWidget.dart';
 import 'package:task_manager/widgets/TextfieldWidget.dart';
@@ -28,9 +29,11 @@ class AddTask extends StatelessWidget {
                 const SizedBox(
                   height: 60,
                 ),
-                IconButton(
-                  onPressed: () {},
-                  icon: Icon(
+                InkWell(
+                  onTap: () {
+                    Get.back();
+                  },
+                  child: Icon(
                     Icons.arrow_back,
                     color: AppColors.secondaryColor,
                   ),
