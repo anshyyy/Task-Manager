@@ -47,8 +47,8 @@ class _Home_pageState extends State<Home_page> {
             InkWell(
               onTap: () {
                 Get.to(() => const AddTask(),
-                    transition: Transition.fade,
-                    duration: const Duration(seconds: 1));
+                    transition: Transition.zoom,
+                    duration: const Duration(milliseconds: 500));
               },
               child: ButtonWidget(
                   backg_color: AppColors.mainColor,
